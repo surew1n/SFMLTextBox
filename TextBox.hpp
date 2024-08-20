@@ -11,6 +11,7 @@ public:
 
     sf::Vector2f getPosition();
     sf::Vector2f getSize();
+    std::string getString();
     sf::Rect<float> getGlobalBounds() const;
 
     void setPosition(sf::Vector2f position);

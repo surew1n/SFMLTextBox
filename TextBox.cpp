@@ -73,6 +73,10 @@ sf::Vector2f TextBox::getSize() {
     return size;
 }
 
+std::string TextBox::getString() {
+    return static_cast<std::string>(string);
+}
+
 sf::Rect<float> TextBox::getGlobalBounds() const {
     return sf::Rect<float>(position, size);
 }
