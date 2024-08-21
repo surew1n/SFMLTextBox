@@ -37,7 +37,7 @@ TextBox::TextBox(sf::Vector2f size, std::string textstr, bool return_clear) {
     first_edit = false;
     this->return_clear = return_clear;
     text.setFont(font);
-    this->setFont("/System/Library/Fonts/monaco.ttf");
+    this->setFont("/usr/share/fonts/truetype/ubuntu/Ubuntu-B.ttf");
 
     setString(textstr);
     setCharacterSize(10);
@@ -171,7 +171,6 @@ void TextBox::KeyPressedEvent(sf::Event event) {
         if(return_clear) {
             if(event.key.code == sf::Keyboard::Return) {
                 if(string.getSize() > 0) {
-                    std::cout << static_cast<std::string>(string) << std::endl;
                     string = "";
                     setString(string);
                 }
